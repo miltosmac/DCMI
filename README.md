@@ -7,8 +7,6 @@
 * [Setup](#setup)
 * [Introduction](#Introduction)
 * [Detailed Explanation](#Detailed-Explanation)
-* [Single Time-Step](#Single-Time-Step)
-* [Multiple Time-Stepsp](#Multiple-Time-Steps)
 
 ### About
 This project introduces an architecture that optimizes Stencil Kernel Calculations and is offloaded to FPGAs with the use of Vitis (Vivado) High Level Synthesis tool (HLS).  
@@ -49,6 +47,8 @@ memory per accelerator invocation. The input and output of data transpires in a 
 lexicographical order is maintained.
 
 ![alt text](https://github.com/miltosmac/DCMI/blob/main/DCMI_Illustrations/ICTA_Overview.jpg?raw=true)
+
+### Detailed Explanation
 
 The abstract representation of the ICT Accelerator is provided in Figure 21. Considering one input, and
 depth 𝐷 the number of time-domain iterations for which we need a result, the design has been loaded

@@ -108,7 +108,7 @@ $$ 𝐶𝑜𝑒𝑓𝑓. 𝐴𝑟𝑟𝑎𝑦_{𝑆𝐼𝑍𝐸} = (2 ∗ 𝐷 +
 Equation ( 18 ) can be verified by the graphical representation Figure 23, as the colored elements
 follow that pattern of expansion with every increment of 𝐷.
 
-![alt text](https://github.com/miltosmac/DCMI/blob/main/DCMI_Illustrations/Stencil_Pattern on_Coeff_Array.jpg?raw=true)
+![alt text](https://github.com/miltosmac/DCMI/blob/main/DCMI_Illustrations/Stencil_Pattern_on_Coeff_Array.jpg?raw=true)
 
 To create the array of effective coefficient, the following procedure takes place. The middle element
 of the array is set to one while the rest are set to zero. Then, the stencil pattern is applied to this input

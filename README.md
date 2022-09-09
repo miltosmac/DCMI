@@ -171,7 +171,7 @@ as registers. Nevertheless, only $(2 ∗ 𝐷 + 1)^2$ data are added to it for e
 element needs to be accessed in a parallel fashion in every clock. So, in the design created for the purposes
 of the present thesis, the Reuse Buffer is partitioned in a non-uniform manner.
 
-![alt text](https://github.com/miltosmac/DCMI/blob/main/DCMI_Illustrations/Reuse_Buffer.jpg?raw=true)
+![alt text](https://github.com/miltosmac/DCMI/blob/main/DCMI_Illustrations/Reuse_Buffer.JPG?raw=true)
 
 The data produced by the multiplication are in sets of 2 ∗ 𝐷 + 1. The number of these sets is again
 2 ∗ 𝐷 + 1. Therefore, the Reuse Buffer is partitioned in 2 ∗ 𝐷 + 1 sets of 2 ∗ 𝐷 + 1 distinct registers.

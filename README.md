@@ -120,7 +120,7 @@ with coefficients according to the stencil pattern, and when two or more arrows 
 their values are summed. After the number of iterations has reached its goal, the array holds the
 combined coefficients of each result element.
 
-![alt text](https://github.com/miltosmac/DCMI/blob/main/DCMI_Illustrations/Edge_Case_Coeffs.jpg?raw=true)
+![alt text](https://github.com/miltosmac/DCMI/blob/main/DCMI_Illustrations/Edge_Case_Coeffs.JPG?raw=true)
 
 An important aspect of calculating the Effective Coefficient Array is the edge case exceptions. The
 process described above, created an array that holds aggregate coefficients that can be applied to the
@@ -129,7 +129,7 @@ edges. Figure 25 shows a differentiated expansion compared to the one of Figure 
 the intrinsic property of ISLs, that the halo data cannot be altered. Therefore, all elements in halo regions,
 and several others near them, require different effective coefficient arrays.
 
-![alt text](https://github.com/miltosmac/DCMI/blob/main/DCMI_Illustrations/Edge_Case.jpg?raw=true)
+![alt text](https://github.com/miltosmac/DCMI/blob/main/DCMI_Illustrations/Edge_Case.JPG?raw=true)
 
 As described before, the effective coefficient arrays explain the way one element affects nearby ones,
 after some time-steps. Figure 26 provides a naive example of how the element of the grid [0,0], affects

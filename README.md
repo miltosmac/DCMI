@@ -147,7 +147,7 @@ the effect of halo, or non-existent data. It arises, that with the incrementatio
 harvests parallelism from, i.e., the value of 𝐷, more Effective Coefficient Arrays need to be generated for
 the purposes of these edge case exceptions.
 
-![alt text](https://github.com/miltosmac/TCAD/blob/main/DCMI_Illustrations/No_of_Coefficient_Arrays_Generated.jpg?raw=true)
+![alt text](https://github.com/miltosmac/DCMI/blob/main/DCMI_Illustrations/No_of_Coefficient_Arrays_Generated.jpg?raw=true)
 
 Figure 27 presents the number of generated Effective Coefficient Arrays and their respective position
 on the four edges of the gird depending on the value of depth 𝐷. The squares marked with the same

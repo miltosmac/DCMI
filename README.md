@@ -50,7 +50,7 @@ lexicographical order is maintained.
 
 ### Detailed Explanation
 
-The abstract representation of the ICT Accelerator is provided in Figure 21. Considering one input, and
+The abstract representation of the ICT Accelerator is provided in the Figure above. Considering one input, and
 depth 𝐷 the number of time-domain iterations for which we need a result, the design has been loaded
 with precomputed effective coefficients. The input is multiplied with the specific coefficients, depending
 on its iteration indexes, and the results are stored on the Reuse Buffer that holds the partial results. After

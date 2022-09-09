@@ -52,7 +52,7 @@ resulting data that are dependent on it have been calculated. Each element is fe
 memory per accelerator invocation. The input and output of data transpires in a streaming manner and
 lexicographical order is maintained.
 
-![alt text](https://github.com/miltosmac/TCAD/blob/main/DCMI_Illustrations/ICTA_Overview.jpg?raw=true)
+![alt text](https://github.com/miltosmac/DCMI/blob/main/DCMI_Illustrations/ICTA_Overview.jpg?raw=true)
 
 The abstract representation of the ICT Accelerator is provided in Figure 21. Considering one input, and
 depth 𝐷 the number of time-domain iterations for which we need a result, the design has been loaded
@@ -61,7 +61,7 @@ on its iteration indexes, and the results are stored on the Reuse Buffer that ho
 the calculations are complete, the first element of the Reuse Buffer is outputted as a result and the buffer
 is shifted left.
 
-![alt text](https://github.com/miltosmac/TCAD/blob/main/DCMI_Illustrations/Example_4x4_D=1.jpg?raw=true)
+![alt text](https://github.com/miltosmac/DCMI/blob/main/DCMI_Illustrations/Example_4x4_D=1.jpg?raw=true)
 
 The example of Figure 22, provides a naive example with the iteration depth 𝐷 = 1 and a small 2-
 dimensional grid of 4 ∗ 4. We examine the impact of the input data only in correlation with the element
@@ -75,7 +75,7 @@ calculation of the data is shown in the final grid to the right. The partial res
 of the buffer. After the last partial result is accumulated with the rest, the calculation of the element in
 red is complete and it is fed to the output port.
 
-![alt text](https://github.com/miltosmac/TCAD/blob/main/DCMI_Illustrations/Effective_Coefficients.jpg?raw=true)
+![alt text](https://github.com/miltosmac/DCMI/blob/main/DCMI_Illustrations/Effective_Coefficients.jpg?raw=true)
 
 The nature of the precomputed coefficients requires further examination. Considering an arbitrary
 data element of a 2-dimensional grid, exemplified as the red square in Figure 23, the elements that are
@@ -108,7 +108,7 @@ $$ 𝐶𝑜𝑒𝑓𝑓. 𝐴𝑟𝑟𝑎𝑦_{𝑆𝐼𝑍𝐸} = (2 ∗ 𝐷 +
 Equation ( 18 ) can be verified by the graphical representation Figure 23, as the colored elements
 follow that pattern of expansion with every increment of 𝐷.
 
-![alt text](https://github.com/miltosmac/TCAD/blob/main/DCMI_Illustrations/Stencil_Pattern on_Coeff_Array.jpg?raw=true)
+![alt text](https://github.com/miltosmac/DCMI/blob/main/DCMI_Illustrations/Stencil_Pattern on_Coeff_Array.jpg?raw=true)
 
 To create the array of effective coefficient, the following procedure takes place. The middle element
 of the array is set to one while the rest are set to zero. Then, the stencil pattern is applied to this input
@@ -120,7 +120,7 @@ with coefficients according to the stencil pattern, and when two or more arrows 
 their values are summed. After the number of iterations has reached its goal, the array holds the
 combined coefficients of each result element.
 
-![alt text](https://github.com/miltosmac/TCAD/blob/main/DCMI_Illustrations/Edge_Case_Coeffs.jpg?raw=true)
+![alt text](https://github.com/miltosmac/DCMI/blob/main/DCMI_Illustrations/Edge_Case_Coeffs.jpg?raw=true)
 
 An important aspect of calculating the Effective Coefficient Array is the edge case exceptions. The
 process described above, created an array that holds aggregate coefficients that can be applied to the
@@ -129,7 +129,7 @@ edges. Figure 25 shows a differentiated expansion compared to the one of Figure 
 the intrinsic property of ISLs, that the halo data cannot be altered. Therefore, all elements in halo regions,
 and several others near them, require different effective coefficient arrays.
 
-![alt text](https://github.com/miltosmac/TCAD/blob/main/DCMI_Illustrations/Edge_Case.jpg?raw=true)
+![alt text](https://github.com/miltosmac/DCMI/blob/main/DCMI_Illustrations/Edge_Case.jpg?raw=true)
 
 As described before, the effective coefficient arrays explain the way one element affects nearby ones,
 after some time-steps. Figure 26 provides a naive example of how the element of the grid [0,0], affects
@@ -171,7 +171,7 @@ as registers. Nevertheless, only $(2 ∗ 𝐷 + 1)^2$ data are added to it for e
 element needs to be accessed in a parallel fashion in every clock. So, in the design created for the purposes
 of the present thesis, the Reuse Buffer is partitioned in a non-uniform manner.
 
-![alt text](https://github.com/miltosmac/TCAD/blob/main/DCMI_Illustrations/Reuse_Buffer.jpg?raw=true)
+![alt text](https://github.com/miltosmac/DCMI/blob/main/DCMI_Illustrations/Reuse_Buffer.jpg?raw=true)
 
 The data produced by the multiplication are in sets of 2 ∗ 𝐷 + 1. The number of these sets is again
 2 ∗ 𝐷 + 1. Therefore, the Reuse Buffer is partitioned in 2 ∗ 𝐷 + 1 sets of 2 ∗ 𝐷 + 1 distinct registers.
